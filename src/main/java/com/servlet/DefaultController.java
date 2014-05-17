@@ -27,7 +27,7 @@ public class DefaultController extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/jsp/website/home-temp.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/jsp/website/frugal-homepage.jsp").forward(request, response);
     }
     
     @Override
@@ -43,7 +43,7 @@ public class DefaultController extends HttpServlet {
 
     	String now = (new Date()).toString();
         logger.info("Returning hello view with " + now);
-        return new ModelAndView("/WEB_INF/jsp/hello.jsp", "now", now);
+        return new ModelAndView("/WEB-INF/jsp/website/frugal-homepage.jsp", "now", now);
     }
 }
 
