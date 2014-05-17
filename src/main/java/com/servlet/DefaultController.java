@@ -36,7 +36,7 @@ public class DefaultController extends HttpServlet {
     	ServletOutputStream out = resp.getOutputStream();
         out.write("heroku".getBytes());
         out.flush();
-    	handleRequest(req, resp);
+    	handleRequest(req, resp); 
     }
     public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
